@@ -78,8 +78,8 @@
 
 
  const messages = [
-  "Travel Agency",
-  "Ui/Ux Designer",
+  "Web Developer",
+  "UI/UX Designer",
   "Web Designer"
  ];
 

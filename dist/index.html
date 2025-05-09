@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Metrophobic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.css" integrity="sha512-kMPqFnKueEwgQFzXLEEl671aHhQqrZLS5IP3HzqdfozaST/EgU+/wkM07JCmXFAt9GO810I//8DBonsJUzGQsQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- Owl Carousel Cdn Link -->
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+     <!-- Owl Carousel Cdn Link -->
+
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Abioye Tajudeen</title>
+  
+</head>
+
+<body class="relative">
+
+    <!-- Preloader start here... -->
+
+  <!-- <div class="preloader-wrapper">
+    <div class="dot-preloader-container">
+    <span class="dot-one"></span>
+    <span class="dot-one dot-two"></span>
+    <span class="dot-one dot-three"></span>
+  </div>
+  </div> -->
+
+   <!-- Preloader end here... -->
+
+  <!-- Head section start here... -->
+
+  <section
+    class="wrapper text-[14px] text-[#525252] shadow-md wrapper-js px-3 md:px-[14px]">
+
+    <div class="container max-w-[1280px] m-auto flex flex-col">
+
+      <div class="mx-0 md:mx-[48px] flex flex-row justify-between items-center relative">
+        <div class="image-wrapper">
+          <img class="fixed-img-js" src="assets/images/mecoding.png" alt="" />
+        </div>
+
+        <nav class="show-nav mt-[14px] uppercase declared-transition">
+          <ul class="flex flex-row items-center gap-6">
+            <li class="active"><a class="scroll" href="#intro">Home</a></li>
+            <li><a class="scroll" href="#services">Services</a></li>
+            <li><a class="scroll" href="#about-me">About</a></li>
+            <li><a class="scroll" href="#my-skills">Skills</a></li>
+            <li><a class="scroll" href="#my-portfolio">Portfolio</a></li>
+            <li><a class="scroll" href="#my-clients">Clients</a></li>
+            <li><a class="scroll" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile navigation start here... -->
+
+        <div onclick="dropDown()"
+          class="w-[35px] text-[#525252] border-2 border-[#525252] px-2 py-1 mt-[12px] cursor-pointer remove-hamburger declared-transition"
+          id="hamburger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#525252">
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+          </svg>
+        </div>
+
+      </div>
+
+      <nav class="uppercase text-[12px] mt-2 mobile-nav mx-0 md:mx-[48px]">
+        <ul class="flex flex-col justify-end items-end gap-2 border-active">
+          <hr class="border-line">
+          </hr>
+          <li><a class="scroll" href="#intro">Home</a></li>
+          <hr class="border-line">
+          </hr>
+          <li><a class="scroll" href="#services">Services</a></li>
+          <hr class="border-line">
+          </hr>
+          <li><a class="scroll" href="#about-me">About</a></li>
+          <hr class="border-line">
+          </hr>
+          <li><a class="scroll" href="#my-skills">Skills</a></li>
+          <hr class="border-line">
+          </hr>
+          <li><a class="scroll" href="#my-portfolio">Portfolio</a></li>
+          <hr class="border-line">
+          </hr>
+          <li><a class="scroll" href="#my-clients">Clients</a></li>
+          <hr class="border-line">
+          </hr>
+          <li><a class="scroll" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile navigation end here... -->
+
+  </section>
+
+  <!-- Head section end here... -->
+
+  <main>
+
+    <!-- Intro section start here... -->
+
+    <section class="linear-bg w-full h-screen text-white flex flex-col justify-center px-3 md:px-[14px]" id="intro">
+
+      <div class="container max-w-[1280px] m-auto relative">
+        <div class="mx-0 md:mx-[48px] flex flex-col">
+          <div class="social-icons flex flex-row gap-6 mb-5">
+            <a class="no-underline" href="https://github.com/AkanniFresh" target="_blank">
+            <img class="w-[16px] md:w-[18px]" src="assets/icons/github-brands-solid.svg" alt=""></a>
+
+            <a class="no-underline" href="https://m.facebook.com/Abioyebolarin?mibextid=wwXIfr" target="_blank">
+            <img class="w-[16px] md:w-[18px]" src="assets/icons/square-facebook-brands-solid.svg" alt=""></a>
+
+            <a class="no-underline" href="https://www.instagram.com/akannifresh/profilecard/?igsh=MWxnaTA3cXVtNGhsdA==" target="_blank">
+            <img class="w-[16px] md:w-[18px]" src="assets/icons/instagram-brands-solid.svg" alt=""></a>
+
+            <a class="no-underline" href="https://x.com/akannifresh?s=21&t=xZHLM1tBs7qeQiOOrVlEfw" target="_blank">
+            <img class="w-[16px] md:w-[18px]" src="assets/icons/twitter-brands-solid.svg" alt=""></a>
+
+            <a href="https://wa.me/message/75INR3ZCBSZYJ1" target="_blank">
+            <img class="w-[16px] md:w-[18px]" src="assets/icons/whatsapp-brands-solid.svg" alt=""></a>
+          </div>
+
+          <div class="usename mb-4 declared-transition">
+            <h1 class="clamp-text ">I'm Abioye Tajudeen</h1>
+          </div>
+
+          <div class="slider-container services-border-anime">
+            <h3 id="slider-text"
+              class="skill-clamp-text pb-3 pt-2 px-6 declared-transition"></h3>
+            <span class="triangle"></span>
+          </div>
+
+        </div>
+        
+        <div onclick="scrollToService()" class="scroll-down-button mx-0 md:mx-[48px] declared-transition" id="arrow-down"> 
+          <img class="w-[16px] rotate-180" src="assets/icons/arrow-up-solid.svg" alt="">
+        </div>
+      </div>
+    
+    </section>
+
+    <!-- #2C5F2D, #97BC62 -->
+
+    <!-- Intro section end here... -->
+     
+
+
+    <!-- Service section start here... -->
+
+    <section class="bg-[#0f0f0f] w-full h-[100%] text-white flex flex-col justify-center px-3 md:px-[14px] py-[50px] smooth-wrapper" id="services">
+
+      <div class="container max-w-[1280px] m-auto" id="smooth-content">
+
+        <div class="my-6 md:my-20">
+          <h1 class="title-clamp">My Services</h1>
+        </div>
+
+
+        <div id="cards" class="mx-0 md:mx-[48px] grid grid-cols-1 grid-rows-6 gap-4 sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 md:lg:gap-6">
+
+
+
+        <div class="card-wrapper" data-aos="fade-up"
+        data-aos-duration="3000">
+          <div class="inner-elem">
+              <div class="icon">
+                  <div>
+                    <!-- Icons from Font awesome -->
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="white">
+                      <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg> -->
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="white"><path d="M64 96c0-35.3 28.7-64 64-64l384 0c35.3 0 64 28.7 64 64l0 256-64 0 0-256L128 96l0 256-64 0L64 96zM0 403.2C0 392.6 8.6 384 19.2 384l601.6 0c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8L76.8 480C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
+                  </div>
+              </div>
+              <h3>Web Design</h3>
+              <p>My web design expertise is rooted in creating websites that are not only visually stunning but also highly functional and user-centric. I specialize in designing digital spaces that captivate audiences, drive engagement, and achieve business goals, with mastery in modern tools. </p>
+          </div>
+      </div>
+
+
+        <div class="card-wrapper" data-aos="fade-up"
+        data-aos-duration="2500">
+          <div class="inner-elem">
+              <div class="icon">
+                  <div>
+                    <!-- <img src="assets/icons/pen-nib-solid.svg" alt=""> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white">
+                      <path d="M368.4 18.3L312.7 74.1 437.9 199.3l55.7-55.7c21.9-21.9 21.9-57.3 0-79.2L447.6 18.3c-21.9-21.9-57.3-21.9-79.2 0zM288 94.6l-9.2 2.8L134.7 140.6c-19.9 6-35.7 21.2-42.3 41L3.8 445.8c-3.8 11.3-1 23.9 7.3 32.4L164.7 324.7c-3-6.3-4.7-13.3-4.7-20.7c0-26.5 21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48c-7.4 0-14.4-1.7-20.7-4.7L33.7 500.9c8.6 8.3 21.1 11.2 32.4 7.3l264.3-88.6c19.7-6.6 35-22.4 41-42.3l43.2-144.1 2.7-9.2L288 94.6z"/></svg>
+                  </div>
+              </div>
+              <h3>Ui/Ux Design</h3>
+              <p>My expertise in UI/UX design ensures that every website I create offers a seamless and enjoyable experience for its users. I specialize in crafting intuitive interfaces that guide users effortlessly through your website, making it easy for them to find what they need and take action.</p>
+          </div>
+      </div>
+
+
+        <div class="card-wrapper" data-aos="fade-up"
+        data-aos-duration="2000">
+          <div class="inner-elem">
+              <div class="icon">
+                  <div>
+                    <!-- <img src="assets/icons/plane-departure-solid.svg" alt=""> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="white">
+                      <path d="M381 114.9L186.1 41.8c-16.7-6.2-35.2-5.3-51.1 2.7L89.1 67.4C78 73 77.2 88.5 87.6 95.2l146.9 94.5L136 240 77.8 214.1c-8.7-3.9-18.8-3.7-27.3 .6L18.3 230.8c-9.3 4.7-11.8 16.8-5 24.7l73.1 85.3c6.1 7.1 15 11.2 24.3 11.2l137.7 0c5 0 9.9-1.2 14.3-3.4L535.6 212.2c46.5-23.3 82.5-63.3 100.8-112C645.9 75 627.2 48 600.2 48l-57.4 0c-20.2 0-40.2 4.8-58.2 14L381 114.9zM0 480c0 17.7 14.3 32 32 32l576 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 448c-17.7 0-32 14.3-32 32z"/></svg>
+                  </div>
+              </div>
+              <h3>Travel Agency</h3>
+              <p>Every individual’s journey abroad is unique, and I take the time to understand your goals, background, and aspirations. By providing one-on-one consultation and tailored advice, I ensure you're well-prepared for every step of the application process. With my guidance, you will feel confident and empowered.</p>
+          </div>
+      </div>
+
+
+      <div class="card-wrapper" data-aos="fade-up"
+      data-aos-duration="3000">
+        <div class="inner-elem">
+            <div class="icon">
+                <div>
+                  <!-- <img src="assets/icons/pen-nib-solid.svg" alt=""> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white"><path d="M388.3 104.1a4.7 4.7 0 0 0 -4.4-4c-2 0-37.2-.8-37.2-.8s-21.6-20.8-29.6-28.8V503.2L442.8 472S388.7 106.5 388.3 104.1zM288.7 70.5a116.7 116.7 0 0 0 -7.2-17.6C271 32.9 255.4 22 237 22a15 15 0 0 0 -4 .4c-.4-.8-1.2-1.2-1.6-2C223.4 11.6 213 7.6 200.6 8c-24 .8-48 18-67.3 48.8-13.6 21.6-24 48.8-26.8 70.1-27.6 8.4-46.8 14.4-47.2 14.8-14 4.4-14.4 4.8-16 18-1.2 10-38 291.8-38 291.8L307.9 504V65.7a41.7 41.7 0 0 0 -4.4 .4S297.9 67.7 288.7 70.5zM233.4 87.7c-16 4.8-33.6 10.4-50.8 15.6 4.8-18.8 14.4-37.6 25.6-50 4.4-4.4 10.4-9.6 17.2-12.8C232.2 54.9 233.8 74.5 233.4 87.7zM200.6 24.4A27.5 27.5 0 0 1 215 28c-6.4 3.2-12.8 8.4-18.8 14.4-15.2 16.4-26.8 42-31.6 66.5-14.4 4.4-28.8 8.8-42 12.8C131.3 83.3 163.8 25.2 200.6 24.4zM154.2 244.6c1.6 25.6 69.3 31.2 73.3 91.7 2.8 47.6-25.2 80.1-65.7 82.5-48.8 3.2-75.7-25.6-75.7-25.6l10.4-44s26.8 20.4 48.4 18.8c14-.8 19.2-12.4 18.8-20.4-2-33.6-57.2-31.6-60.8-86.9-3.2-46.4 27.2-93.3 94.5-97.7 26-1.6 39.2 4.8 39.2 4.8L221.4 225.4s-17.2-8-37.6-6.4C154.2 221 153.8 239.8 154.2 244.6zM249.4 82.9c0-12-1.6-29.2-7.2-43.6 18.4 3.6 27.2 24 31.2 36.4Q262.6 78.7 249.4 82.9z"/></svg>
+                </div>
+            </div>
+            <h3>Shopify Customization</h3>
+            <p>I specialize in Shopify customization to help your e-commerce store stand out and perform at its best. From custom themes to advanced functionality, I create tailored solutions that align perfectly with your brand and business goals. Whether you’re starting fresh or enhancing an existing store.</p>
+        </div>
+    </div>
+
+    <div class="card-wrapper" data-aos="fade-up"
+    data-aos-duration="2500">
+      <div class="inner-elem">
+          <div class="icon">
+              <div>
+                <!-- <img src="assets/icons/pen-nib-solid.svg" alt=""> -->
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg> -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white"><path d="M61.7 169.4l101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8 .9 0 1.8 .1 2.8 .2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7 .3 13.7 .3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3l-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z"/></svg>
+              </div>
+          </div>
+          <h3>WordPress Design</h3>
+          <p>I specialize in creating custom WordPress websites that are visually striking, user-friendly, and fully optimized for performance. Whether you need a business website, portfolio, blog, or e-commerce store, I design and develop tailored solutions that align perfectly with your brand.</p>
+      </div>
+  </div>
+
+
+  <div class="card-wrapper" data-aos="fade-up"
+  data-aos-duration="2000">
+    <div class="inner-elem">
+        <div class="icon">
+            <div>
+              <!-- <img src="assets/icons/pen-nib-solid.svg" alt=""> -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="white"><path d="M0 128C0 92.7 28.7 64 64 64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2l0 256c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1l0-17.1 0-128 0-17.1 14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg>
+            </div>
+        </div>
+        <h3>Title Animation</h3>
+        <p>Every project is unique, and I take the time to understand your goals and audience. Whether you need subtle elegance or bold, eye-catching effects, I create title animations that amplify your message and make your content stand out. With my expertise, your titles will convey your message effectively.</p>
+    </div>
+</div>
+
+
+      </div>
+    </div>
+
+    </section>
+
+    <!-- Services section end here... -->
+
+
+    <!-- About section start here... -->
+
+    <section class="bg-[#0f0f0f] w-full h-[100%] text-white flex flex-col justify-center px-3 md:px-[14px] pt-[50px] pb-0 md:pb-[50px]" id="about-me">
+      <div class="container max-w-[1280px] m-auto">
+
+        <div class="my-6 md:my-20">
+          <h1 class="title-clamp">About Me</h1>
+        </div>
+
+
+        <div class="mx-0 md:mx-[48px]">
+
+
+          <div class="flex-colum grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-4 place-items-center place-content-center">
+
+            <div class="max-w-[400px] m-auto image-mask">
+              <img class="w-[100%]" src="assets/images/teejay.png" alt="">
+            </div>
+            
+            
+            <div class="flex flex-col gap-6">
+              <div class="border-wrap skill-border" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom" data-aos-duration="300">
+                <h4 class="px-6 py-4">Hi There</h4>
+                <span class="triangle"></span>
+              </div>
+              <p data-aos="fade-up" data-aos-duration="300" class="pr-2">I am a versatile designer, passionate about crafting impactful digital experiences that blend creativity with functionality. With expertise spanning Web Design, UI/UX Design, Shopify Customization, WordPress Design, and Title Animation, I bring a holistic approach to every project. My focus is on delivering tailored solutions that reflect your brand’s identity, captivate your audience, and achieve tangible results.</p>
+
+              <div data-aos="fade-up"
+        data-aos-duration="400" class="contact-info grid grid-cols-2 grid-rows-2 gap-4">
+
+                <dl>
+                  <dt>Name:</dt>
+                  <dd>Abioye Tajudeen</dd>
+                </dl>
+
+                <dl>
+                  <dt>Email:</dt>
+                  <dd class="no-underline">abioyebolarin@gmail.com</dd>
+                </dl>
+
+                <dl>
+                  <dt>Phone:</dt>
+                  <dd><a class="no-underline" href="tel:+234 816-421-4924">+234 816-421-4924</a></dd>
+                </dl>
+
+                <dl>
+                  <dt>Telegram</dt>
+                  <dd><a class="no-underline" href="https://t.me/Chat_MomentumStudio" target="_blank">@chat_momentumstudio</a></dd>
+                </dl>
+              </div>
+
+              <div class="bottom-line w-[100%] h-[1px] bg-[#393939] my-6"></div>
+
+              <div class="flex flex-row gap-3 mb-10">
+
+              
+                  <a href="tel: +2348164214924"><button class="fill-button">Contact Me <i class="fa-solid fa-arrow-right fa-sm"></i></button></a>
+                  <!-- <img src="assets/icons/forward-arrow.png" alt=""> -->
+    
+
+                  <a href="assets/documents/my-resume.pdf" target="_blank"><button class="outline-button"><i class="fa-solid fa-download fa-sm"></i> Download Cv</button></a>
+
+                </div>  
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+
+    </section>
+
+    <!-- About section end here... -->
+
+
+    <!-- Ads section start here... -->
+
+    <section class="bg-[#0f0f0f] w-full h-[100%] text-white flex flex-col justify-center px-3 md:px-[14px] py-[30px]" id="about">
+
+      <div class="container max-w-[1280px] m-auto relative">
+
+
+        <div class="mx-0 md:mx-[48px] relative flex items-center justify-center"> 
+          <div class="relative max-w-[100%] max-h-[150px] overflow-hidden ads-image-mask">
+            <img class="w-[100%] h-[100%] declared-transition" src="assets/images/typing-keyboard.jpg" alt="">
+          </div>
+
+          <h3 class="ads-write-up">Let's Work Together On Your Next Project!</h3>
+          <div class="ads-button fill-button">
+            <a href="#contact"><button class="uppercase">Hire Me Now!</button></a>
+            
+            <span class="ads-triangle"></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Ads section end here... -->
+
+
+    <!-- Skill section start here... -->
+
+    <section class="bg-[#0f0f0f] w-full h-[100%] text-white flex flex-col justify-center px-3 md:px-[14px] pt-[10px] pb-[50px]" id="my-skills">
+
+      <div class="container max-w-[1280px] m-auto pt-[60px] pb-[48px] md:pt-[90px]">
+
+        <div class="my-6 md:my-20">
+          <h1 class="title-clamp">My Skills</h1>
+        </div>
+
+
+        <div class="mx-0 md:mx-[48px]">
+ 
+          <h4 class="mb-4">Every Day is a New Challenge</h4>
+ 
+          <div class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-4 md:gap-10 place-content-center">
+
+          <!-- Ending of my skill write up container -->
+
+          <div class="my-skill-write-up-container">
+
+          <div class="flex flex-col gap-4">
+            <p>Great design is not just about how it looks, but how it works to solve problems and inspire action. Let’s create something extraordinary together.</p>
+            <p>By staying ahead of industry trends and collaborating closely with clients, I transform ideas into results-driven designs that leave a lasting impression. Whether it’s crafting a seamless user experience, boosting e-commerce performance, or creating visually stunning media, I’m dedicated to helping brands and businesses thrive in today’s competitive digital landscape.</p>
+          </div>
+
+          <div class="my-6 flex flex-row justify-start">
+           <button class="outline-button">Contact Me</button>
+
+          </div>
+
+
+        </div>
+
+
+        <!-- Ending of my skill write up container -->
+
+        <!-- Start of my skill percentage container -->
+
+
+        <div class="skill-percentage-wrapper grid grid-cols-1 grid-rows-4 gap-4">
+
+
+        <div class="web-design-wrapper">
+
+          <h5 class="mb-4">Web Design</h5>
+
+          <div class="percentage-wrapper">
+            <div class="percentage-bar expand">
+
+              <div class="percentage">
+                <span class="py-[4px] px-[6px] text-[10px]">95%</span>
+                <span class="percentage-triangle"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="web-design-wrapper">
+
+          <h5 class="mb-4">Ui/Ux Design</h5>
+
+          <div class="percentage-wrapper">
+            <div class="ui-design expand-two">
+
+              <div class="percentage">
+                <span class="py-[4px] px-[6px] text-[10px]">85%</span>
+                <span class="percentage-triangle"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="web-design-wrapper">
+
+          <h5 class="mb-4">Travel Agent</h5>
+
+          <div class="percentage-wrapper">
+            <div class="travel-bar expand-three">
+
+              <div class="percentage">
+                <span class="py-[4px] px-[6px] text-[10px]">90%</span>
+                <span class="percentage-triangle"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="web-design-wrapper">
+
+          <h5 class="mb-4">WordPress</h5>
+
+          <div class="percentage-wrapper">
+            <div class="shopify-bar expand-four">
+
+              <div class="percentage">
+                <span class="py-[4px] px-[6px] text-[10px]">80%</span>
+                <span class="percentage-triangle"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+         <!-- End of my skill percentage container -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Skill section end here... -->
+
+
+    <!-- Porfolio section start here... -->
+
+    <section class="bg-[#0f0f0f] w-full h-[100%] text-white flex flex-col justify-center px-3 md:px-[14px]" id="my-portfolio">
+
+      <div class="container max-w-[1280px] m-auto">
+
+        <div class="mx-0 md:mx-[48px] padding-y">
+          
+          <div class="my-6 md:my-20 flex justify-start">
+            <h1 class="title-clamp">Porfolio</h1>
+          </div>
+
+          <!-- Start of overflow-image-container -->
+
+          <div class="overflow-image-container grid grid-cols-1 place-items-center sm:grid-cols-2 sm:grid-flow-row-dense md:grid-cols-3 lg:grid-cols-3 row-auto md:grid-flow-row-dense gap-4">
+
+
+
+            <div class="overflow-hidden relative max-w-[300px] port-container h-fit flex justify-center items-center" data-aos="fade-up"
+            data-aos-duration="2000">
+                  <!-- <img class="max-w-[100%]" src="assets/images/img-work-06.png" alt=""> -->
+                   <div class="video-container">
+                   <video autoplay muted loop controls id="myvideo" width="290">
+                    <source src="assets/videos/atkins.mp4" type="video/mp4">
+                   </video>
+                  </div>
+    
+                  <!-- <div class="portfolio-content">
+                    <h3>Title Animation</h3>
+                    <h4>Atkins</h4>
+                  </div>           -->
+                </div>
+            
+            <div class="overflow-hidden relative max-w-[280px] m-auto port-container h-fit flex justify-center items-center" data-aos="fade-up"
+        data-aos-duration="2000">
+              <img class="w-[100%]" src="assets/images/img-work-01.png" alt="">
+
+              <div class="portfolio-content">
+                <h3>Web Development</h3>
+                <h4 ><a href="https://binokulas.netlify.app/" target="_blank">Binokulas</a></h4>
+              </div>          
+            </div>
+            <div class="overflow-hidden relative max-w-[300px] port-container h-fit flex justify-center items-center md:col-start-3" data-aos="fade-up"
+        data-aos-duration="2000">
+              <img class="max-w-[100%]" src="assets/images/img-work-02.png" alt="">
+
+              <div class="portfolio-content">
+                <h3>Interface Design</h3>
+                <h4><a class="no-underline" href="https://mintfunclone.netlify.app/" target="_blank">Mint fun</a></h4>
+              </div>         
+             </div>
+            <div class="overflow-hidden relative max-w-[300px] port-container h-fit flex justify-center items-center" data-aos="fade-up"
+        data-aos-duration="2000">
+              <img class="max-w-[100%]" src="assets/images/img-work-03.png" alt="">
+
+              <div class="portfolio-content">
+                <h3>Interface Design</h3>
+                <h4><a href="https://monerolandingpage.netlify.app/" target="_blank">Monero</a></h4>
+              </div>          
+            </div>
+      
+            <div class="overflow-hidden relative max-w-[300px] port-container h-fit flex justify-center items-center" data-aos="fade-up"
+        data-aos-duration="2000">
+              <!-- <img class="max-w-[100%]" src="assets/images/img-work-06.png" alt=""> -->
+               <div class="video-container">
+               <video autoplay muted loop controls id="myvideo" width="290">
+                <source src="assets/videos/Relokate.mp4" type="video/mp4">
+               </video>
+              </div>
+
+              <!-- <div class="portfolio-content">
+                <h3>Ui/Ux Design</h3>
+                <h4>Kyc Sequence</h4>
+              </div>           -->
+            </div>
+
+ 
+            <div class="overflow-hidden relative max-w-[300px] port-container h-fit flex justify-center items-center" data-aos="fade-up"
+        data-aos-duration="200">
+              <img class="max-w-[100%]" src="assets/images/img-work-10.png" alt="">
+
+              <div class="portfolio-content">
+                <h3>Web Development</h3>
+                <h4><a href="https://xpldevelopers.org/
+                  " target="_blank">XPL Developers</a></h4>
+              </div>          
+            </div>
+
+            <div class="overflow-hidden relative max-w-[300px] port-container h-fit flex justify-center items-center" data-aos="fade-up"
+        data-aos-duration="200">
+              <img class="max-w-[100%]" src="assets/images/espace.png" alt="">
+
+              <div class="portfolio-content">
+                <h3>Web Development</h3>
+                <h4><a href="https://www.espace.ae/" target="_blank">Espace Real Estate</a></h4>
+              </div>          
+            </div>
+
+            <div class="overflow-hidden relative max-w-[300px] port-container h-fit flex justify-center items-center" data-aos="fade-up"
+        data-aos-duration="200">
+              <img class="max-w-[100%]" src="assets/images/img-work-11.png" alt="">
+          
+
+              <div class="portfolio-content">
+                <h3>Interface Design</h3>
+                <h4><a href="https://webcryptowallet.netlify.app/" target="_blank">Web Wallet</a></h4>
+              </div>
+            </div>
+
+            <div class="overflow-hidden relative max-w-[300px] port-container h-fit flex justify-center items-center" data-aos="fade-up"
+            data-aos-duration="2000">
+                  <!-- <img class="max-w-[100%]" src="assets/images/img-work-06.png" alt=""> -->
+                   <div class="xclusive-container">
+                   <video autoplay muted loop controls id="myvideo" width="290">
+                    <source src="assets/videos/xclusiveplt.mp4" type="video/mp4">
+                   </video>
+                  </div>
+    
+                  <!-- <div class="portfolio-content">
+                    <h3>Title Animation</h3>
+                    <h4>Xclusive</h4>
+                  </div>           -->
+                </div>
+
+
+          </div>
+
+          <!-- End of overflow-image-container -->
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- Portfolio section end here... -->
+
+
+    <!-- Counter section start here... -->
+
+
+    <section class="bg-[#0f0f0f] w-full h-[100%] text-white flex flex-col justify-center px-3 md:px-[14px] counter-js">
+
+      <div class="container max-w-[1280px] m-auto">
+
+       
+
+
+        <div class="mx-0 md:mx-[48px] padding-y">
+
+
+          <div class="odometer-wrapper grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-6 md:gap-6 py-2">
+
+            <div class="odometer-content odometer-js text-center">
+              <span class="number-counter client-odometer">0</span>
+              <h5>Clients</h5>
+            </div>
+
+            <div class="odometer-content odometer-js text-center">
+              <span class="number-counter project-odometer">0</span>
+              <h5>Projects</h5>
+            </div>
+
+            <div class="odometer-content odometer-js text-center">
+              <span class="number-counter certification-odometer">0</span>
+              <h5>Certifications</h5>
+            </div>
+
+            <div class="odometer-content odometer-js text-center">
+              <span class="number-counter experience-odometer">0</span>
+              <h5>Years of Experience</h5>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter section end here... -->
+
+
+    <!-- Testimonial section start here... -->
+
+
+    <section class="bg-[#0f0f0f] w-full h-[100%] text-white px-3 md:px-[14px]" id="my-clients">
+
+      <div class="container max-w-[1280px] m-auto">
+
+        <div class="mx-0 md:mx-[48px] padding-y">
+          
+          <div class="my-6 md:my-20 flex justify-center">
+            <h1 class="title-clamp">Testimonial</h1>
+          </div>
+          
+        <div id="slider-1" class="owl-carousel owl-theme">
+
+          <div class="item">
+          <div class="testimonial-wrapper flex flex-col justify-center items-center gap-3 mb-10">
+          <span class="quote-container bg-[#97bc62] p-4 relative">
+            <i class="fa-solid fa-quote-right fa-xl"></i>
+            <span class="ads-triangle"></span>
+
+          </span>
+
+          <p class="max-w-[500px] m-auto text-center">Working with Abioye was an absolute game-changer for our business. his ability to transform our ideas into a stunning, user-friendly website exceeded all our expectations. The attention to detail and creative flair he brought to the project made our brand stand out in ways we couldn’t have imagined!</p>
+
+          <div class="flex flex-col justify-center items-center">
+            <div class="max-w-[120px] my-5">
+            <img class="carousel-img rounded-full m-auto" src="assets/images/RC-Profile-Square.png" alt="">
+            </div>
+            <h3>Francis King</h3>
+            <h3 class=" text-[gray] mt-1">Product Designer</h3>
+          </div>
+          </div>
+    </div>
+
+          <div class="item">
+          <div class="testimonial-wrapper flex flex-col justify-center items-center gap-3 mb-10">
+          <span class="quote-container bg-[#97bc62] p-4 relative">
+            <i class="fa-solid fa-quote-right fa-xl"></i>
+            <span class="ads-triangle"></span>
+
+          </span>
+
+          <p class="max-w-[500px] m-auto text-center">From start to finish, Abioye showcased incredible professionalism and expertise. He do not only designed a beautiful Shopify store for us but also customized it to perfectly suit our needs. Sales have skyrocketed, and we owe it all to his dedication and talent. Highly recommend!</p>
+
+          <div class="flex flex-col justify-center items-center">
+            <div class="max-w-[120px] my-5">
+            <img class="carousel-img rounded-full m-auto" src="assets/images/opulent-profile-square-07.jpg" alt="">
+            </div>
+            <h3>Arash Rayyan</h3>
+            <h3 class=" text-[gray] mt-1">Clockwise Marketer</h3>
+          </div>
+          </div>
+    </div>
+          <div class="item">
+          <div class="testimonial-wrapper flex flex-col justify-center items-center gap-3 mb-10">
+          <span class="quote-container bg-[#97bc62] p-4 relative">
+            <i class="fa-solid fa-quote-right fa-xl"></i>
+            <span class="ads-triangle"></span>
+          </span>
+
+          <p class="max-w-[500px] m-auto text-center">The title animations Fresh created for our project were nothing short of brilliant. His creativity, attention to detail, and ability to match the animations perfectly with our content were impressive. Our audience was captivated, and the animations added a level of professionalism we never thought possible.</p>
+
+          <div class="flex flex-col justify-center items-center">
+            <div class="max-w-[120px] my-5">
+            <img class="carousel-img rounded-full m-auto" src="assets/images/sanya.png" alt="">
+            </div>
+            <h3>Samuel Moses</h3>
+            <h3 class=" text-[gray] mt-1">Greek Studio</h3>
+          </div>
+          </div>
+    </div>
+
+          <div class="item">
+          <div class="testimonial-wrapper flex flex-col justify-center items-center gap-3 mb-10">
+          <span class="quote-container bg-[#97bc62] p-4 relative">
+            <i class="fa-solid fa-quote-right fa-xl"></i>
+            <span class="ads-triangle"></span>
+          </span>
+
+          <p class="max-w-[500px] m-auto text-center">Working with Aresa Travels made planning our trip so much easier and stress-free. They took the time to understand exactly what we wanted and curated an itinerary that was perfect for my family. From applications to accommodations and activities, every detail was handled with care. </p>
+
+          <div class="flex flex-col justify-center items-center">
+            <div class="max-w-[120px] my-5">
+            <img class="carousel-img rounded-full m-auto" src="assets/images/Subtraction 2.png" alt="">
+            </div>
+            <h3>Odusanya</h3>
+            <h3 class=" text-[gray] mt-1">Zeem Ventures</h3>
+          </div>
+          </div>
+    </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Testimonial section end here... -->
+
+
+    <!-- Logos section start here... -->
+
+    <section class="bg-[#0f0f0f] w-full h-[100%] text-white px-3 md:px-[14px]">
+
+      <div class="container max-w-[1280px] m-auto">
+
+        <div class="mx-0 md:mx-[48px] padding-y">
+          
+        <div class="flex flex-row flex-wrap justify-center items-center gap-10">
+          <div class="max-w-[30px]">
+          <img class="w-[30px]" src="assets/icons/coursera_logo_icon_247268.svg" alt="">
+        </div>
+        <div class="max-w-[30px]">
+          <img class="w-[30px]" src="assets/icons/google_icon-icons.com_62736.svg" alt="">
+        </div>
+        <div class="max-w-[30px]">
+          <img class="w-[30px]" src="assets/icons/sololearn_logo_icon_249580.svg" alt="">
+        </div>
+        <div class="max-w-[30px]">
+          <img class="w-[30px]" src="assets/icons/freecodecamp_logo_icon_248501.svg" alt="">
+        </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Logos section end here... -->
+
+  </main>
+
+
+   <!-- Footer section start here... -->
+
+  <footer class="bg-[#0f0f0f] w-full h-[100%] text-white px-3 md:px-[14px] relative" id="contact">
+
+    <div class="container max-w-[1280px] m-auto relative">
+
+      <div class="mx-0 md:mx-[48px] padding-y flex flex-col justify-center items-center gap-10 md:gap-20">
+
+        <div class="my-6 md:my-20 flex justify-center">
+
+        <div class="border-wrap skill-border" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="500">
+          <h4 class="px-6 py-4">Get In Touch</h4>
+          <span class="triangle"></span>
+        </div>
+        </div>
+
+
+        <div class="contact-links-wrapper grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-6 place-items-center place-content-center">
+
+          <div class="link-container flex flex-col justify-center items-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000"> 
+
+            <div class="mb-4">
+              <img width="45px" src="assets/icons/geo-alt.svg" alt="">
+            </div>
+            <h3 class="mb-1">Address</h3>
+            <figure class="opacity-45 text-center no-underline">Suite 1, Ridwan House, Beside NNPC,</figure>
+            <figure class="opacity-45 text-center no-underline">Asa-Dam, Ilorin Nigeria</figure>
+
+          </div>
+
+          <div class="link-container flex flex-col justify-center items-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="300"> 
+
+            <div class="mb-4">
+              <img width="40px" src="assets/icons/telephone.svg" alt="">
+            </div>
+            <h3 class="mb-1">Phone</h3>
+            <figure class="opacity-45 no-underline">+234 816-421-4924</figure>
+            <figure class="opacity-45 no-underline">+234 708-150-0901</figure>
+
+          </div>
+
+          <div class="link-container flex flex-col justify-center items-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="305"> 
+
+            <div class="mb-4">
+              <img width="40px" src="assets/icons/envelope.svg" alt="">
+            </div>
+            <h3 class="mb-1">Email</h3>
+            <figure class="opacity-45 no-underline">abioyebolarin@gmail.com</figure>
+            <figure class="opacity-45 no-underline">momentumstudio@gmail.com</figure>
+
+          </div>
+
+          <div class="link-container flex flex-col justify-center items-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="305"> 
+
+            <div class="mb-4">
+              <img width="40px" src="assets/icons/chat-text.svg" alt="">
+            </div>
+            <h3 class="mb-1">Facebook Chat</h3>
+            <figure class="opacity-45 no-underline">abioyebolarin</figure>
+
+          </div>
+
+
+        </div>
+
+      </div>
+      <a class="scroll" href="#intro" title="Goto Top">
+      <div class="scroll-up-button declared-transition" id="arrow-down"> 
+        <img class="w-[16px]" src="assets/icons/arrow-up-solid.svg" alt="">
+      </div> </a>
+
+      </div>
+  </footer>
+
+   <!-- Footer section end here... -->
+
+  
+
+
+  <!-- Javascript start here... -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.5.1/SmoothScroll.min.js" integrity="sha512-BkMKSo7sGBeDmtIyZoyInJbrI/XqQ1ez6SZotOL0e+iT6tzOjBmtMpWWPUVbcdqLbaukREItSDV2aohX+9gBlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <!-- JQuery Cdn Link -->
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+  <!-- JQuery Cdn Link -->
+
+  <!-- Owl Carousel JavaScript Link -->
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  <!-- Owl Carousel JavaScript Link -->
+
+  <!-- Odometer JavaScript Cdn Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js" integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <!-- Odometer JavaScript Cdn Link -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js" integrity="sha512-7IoDEsIJGxz/gNyJY/0LRtS45wDSvPFXGPuC7Fo4YueWMNOmWKMAllEqo2Im3pgOjeEwsOoieyliRgdkZnY0ow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+ 
+
+  <!-- Javascript end here... -->
+
+</body>
+
+</html>
+

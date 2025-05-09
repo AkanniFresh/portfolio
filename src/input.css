@@ -386,6 +386,15 @@
 
   /* Skill section styling start here */
 
+  .underline-bar {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: #3b82f6;
+    border-radius: 100%;
+    margin-top: 1rem;
+    /* @apply w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full */
+  }
+
   .title-clamp {
     font-size: clamp(20px, 3vw, 30px);
     text-align: center;
